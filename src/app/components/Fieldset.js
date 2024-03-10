@@ -1,9 +1,13 @@
-import React from 'react'
+// Fieldset.js
 
-const Fieldset = () => {
+import React from 'react';
+
+const Fieldset = ({ children }) => {
   return (
-    <div>Fieldset</div>
-  )
-}
+    <div className='flex flex-col'>
+      {children}
+    </div>
+  );
+};
 
-export default Fieldset
+export default Fieldset;

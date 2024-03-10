@@ -4,6 +4,9 @@ import Link from "next/link";
 const Navigation = () => {
   return (
     <nav className="flex justify-center gap-8 mb-5">
+      <Link href="/" className="font-semibold text-teal-800">
+        Home
+      </Link>
       <Link href="/products" className="font-semibold text-teal-800">
         Products
       </Link>
