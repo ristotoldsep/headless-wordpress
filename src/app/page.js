@@ -8,10 +8,11 @@ const Home = () => {
     <section>
       <div className="mx-auto max-w-screen-xl px-4 py-32 lg:items-center">
         <div className="mx-auto max-w-xl text-center">
-          <h1 className="text-3xl font-extrabold sm:text-9xl">
+        <h1 className="text-3xl font-extrabold sm:text-9xl flex flex-col items-center">
             Headless
             <strong className="font-extrabold text-teal-800 sm:block">Wordpress</strong>
-          </h1>
+        </h1>
+
 
           <p className="mt-4 sm:text-xl/relaxed">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga ducimus

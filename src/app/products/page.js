@@ -6,7 +6,7 @@ const Products = async () => {
     const req = await fetch(`${reqUrl}/products?acf_format=standard&_fields=id,title,acf,slug`);
     const products = await req.json();
 
-    console.log(products);
+    // console.log(products);
 
     return (
         <div className='container mx-auto p-8 pb-16'>

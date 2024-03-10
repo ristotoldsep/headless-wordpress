@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { reqUrl } from '@/config';
 
 const SingleProduct = async ({ params }) => {
-    console.log('product-slug: ', params.slug);
+    // console.log('product-slug: ', params.slug);
 
     const req = await fetch(`${reqUrl}/products?acf_format=standard&_fields=id,title,acf,slug&slug=${params.slug}`);
     const products = await req.json();

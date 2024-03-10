@@ -5,8 +5,6 @@ import Button from './Button'
 
 const Card = ({ title, subtitle, thumbnail, btnLabel, href }) => {
 
-  console.log(thumbnail);
-
   return (
     <div>
         <Link href={href}>
