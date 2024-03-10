@@ -1,0 +1,1 @@
+export const reqUrl = 'https://gatsby.vdisain.dev/wp-json/wp/v2';
