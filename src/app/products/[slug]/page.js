@@ -33,4 +33,14 @@ const SingleProduct = async ({ params }) => {
     )
 }
 
+// Return a list of `params` to populate the [slug] dynamic segment
+export async function generateStaticParams() {
+    const req = await fetch(`${reqUrl}/products?_fields=slug`);
+    const products = await req.json();
+
+    return products.map((product) => ({
+        slug: product.slug,
+    }))
+}
+
 export default SingleProduct
