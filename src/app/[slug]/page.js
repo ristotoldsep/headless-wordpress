@@ -5,7 +5,7 @@ const Page = async ({ params }) => {
 
   // console.log(params);
 
-  const req = await fetch(`${reqUrl}/pages?_fields=id,slug,title,content&acf_format=standard&slug=${params.slug}`);
+  const req = await fetch(`${reqUrl}/pages?_fields=id,slug,title,content&acf_format=standard&slug=${params.slug}`, { next: { revalidate: 3600 } });
   const pages = await req.json();
   const page = pages[0];
 
