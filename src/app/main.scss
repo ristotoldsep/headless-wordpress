@@ -16,12 +16,12 @@
   }
 }
 
-body {
-
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.page_hero {
+  min-height: calc(100vh - 200px);
 }

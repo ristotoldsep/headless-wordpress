@@ -3,7 +3,7 @@ import Card from '../components/Card'
 import { reqUrl } from '@/config';
 
 const Products = async () => {
-    const req = await fetch(`${reqUrl}/products?acf_format=standard&_fields=id,title,acf,slug`);
+    const req = await fetch(`${reqUrl}/products?acf_format=standard&_fields=id,title,acf,slug`, { next: { revalidate: 1800 } });
     const products = await req.json();
 
     // console.log(products);
